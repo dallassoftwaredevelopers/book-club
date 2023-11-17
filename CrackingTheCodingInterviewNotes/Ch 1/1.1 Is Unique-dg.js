@@ -1,5 +1,6 @@
 // Is Unique: Implement an algorithm to determine if all characters in a string are unique.
 
+// Solution with 2 for loops
 function isUnique(string) {
   for (let i = 0; i < string.length; i++) {
     for (let j = i + 1; j < string.length; j++) {
@@ -13,6 +14,7 @@ function isUnique(string) {
 console.log(isUnique("jump"));
 console.log(isUnique("butterfly"));
 
+// Solution with 1 for loop using a tracker object
 function isUniqueObject(string) {
   const tracker = {};
 
@@ -29,6 +31,7 @@ function isUniqueObject(string) {
 console.log(isUniqueObject("jump"));
 console.log(isUniqueObject("butterfly"));
 
+// Solution with 1 for loop using a tracker Map
 function isUniqueMap(string) {
   const tracker = new Map();
 
